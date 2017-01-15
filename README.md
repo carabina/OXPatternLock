@@ -9,36 +9,6 @@ OXPatternLock requires Swift 3.0 and Xcode 8
 ### Manually
 Add [OXPatternLock.swift](https://github.com/oxozle/OXPatternLock/blob/master/Source/OXPatternLock.swift) to your project in Xcode  
 
-### CocoaPods
-
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
-
-```bash
-$ gem install cocoapods
-```
-
-To integrate OXPatternLock into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
-use_frameworks!
-
-target '<Your Target Name>' do
-	# for stable release
-    pod 'OXPatternLock'
-
-    # for latest release
-    pod 'OXPatternLock', :git => 'https://github.com/oxozle/OXPatternLock.git', :branch => 'master'
-end
-```
-
-Then, run the following command:
-
-```bash
-$ pod install
-```
-
 ## Usage
 
 1. Create an implementation of the `OXPatternLockDelegate` protocol.
@@ -57,7 +27,7 @@ There is support for Interface Builder. All properties configurable from Interfa
 
 <img src="https://github.com/oxozle/OXPatternLock/raw/master/assets/interface-builder.jpg"> <img src="https://github.com/oxozle/OXPatternLock/raw/master/assets/properties.png">
 
-## Customisation
+## Customization
 
 The locker can be customized by setting any of the following public properties before displaying the OXPatternLock. The defaults are shown below.
 
