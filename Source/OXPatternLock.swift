@@ -69,9 +69,9 @@ open class OXPatternLock: UIControl {
 
     
     
-    /// Thikness of track line
+    /// Thickness of track line
     @IBInspectable
-    public var trackLineThikness: CGFloat = 5{
+    public var trackLineThickness: CGFloat = 5{
         didSet {
             updateLayoutConfiguration()
         }
@@ -123,7 +123,7 @@ open class OXPatternLock: UIControl {
         }
         
         trackLineColor.set()
-        ctx.setLineWidth(trackLineThikness)
+        ctx.setLineWidth(trackLineThickness)
         ctx.setLineCap(.round)
         ctx.setLineJoin(.round)
         ctx.addPath(path.cgPath)
