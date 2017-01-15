@@ -1,7 +1,7 @@
 # OXPatternLock
 An iOS pattern lock like Android authentication written in Swift.
 
-<img src="https://raw.githubusercontent.com/oxozle/OXPatternLock/master/ox-pattern-lock.gif" height="386">
+<img src="https://github.com/oxozle/OXPatternLock/raw/master/assets/ox-pattern-lock.gif" height="386">
 
 ## Installation
 OXPatternLock requires Swift 3.0 and Xcode 8
@@ -54,7 +54,8 @@ func didPatternInput(patterLock: OXPatternLock, track: [Int]) {
 ### Interface Builder support
 
 There is support for Interface Builder. All properties configurable from Interface Builder.
-<img src="https://raw.githubusercontent.com/oxozle/OXPatternLock/master/interface-builder.jpg"> <img src="https://raw.githubusercontent.com/oxozle/OXPatternLock/master/properties.png">
+
+<img src="https://github.com/oxozle/OXPatternLock/raw/master/assets/interface-builder.jpg"> <img src="https://github.com/oxozle/OXPatternLock/raw/master/assets/properties.png">
 
 ## Customisation
 
