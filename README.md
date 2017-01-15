@@ -1,7 +1,7 @@
 # OXPatternLock
 An iOS pattern lock like Android authentication written in Swift.
 
-<img src="https://github.com/oxozle/OXPatternLock/raw/master/assets/ox-pattern-lock.gif" height="386">
+<img src="https://github.com/oxozle/OXPatternLock/raw/master/assets/ox-pattern-lock.gif">
 
 ## Installation
 OXPatternLock requires Swift 3.0 and Xcode 8
