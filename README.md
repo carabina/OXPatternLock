@@ -1,10 +1,47 @@
 # OXPatternLock
+
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/OXPatternLock.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/v/OXPatternLock.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/l/OXPatternLock.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/p/OXPatternLock.svg)]()
+
 An iOS pattern lock like Android authentication written in Swift.
 
 <img src="https://github.com/oxozle/OXPatternLock/raw/master/assets/ox-pattern-lock.gif">
 
 ## Installation
 OXPatternLock requires Swift 3.0 and Xcode 8
+
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate OXPatternLock into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target '<Your Target Name>' do
+	# for stable release
+    pod 'OXPatternLock'
+
+    # for latest release
+    pod 'OXPatternLock', :git => 'https://github.com/oxozle/OXPatternLock.git', :branch => 'master'
+end
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
 
 ### Manually
 Add [OXPatternLock.swift](https://github.com/oxozle/OXPatternLock/blob/master/Source/OXPatternLock.swift) to your project in Xcode  
@@ -14,6 +51,8 @@ Add [OXPatternLock.swift](https://github.com/oxozle/OXPatternLock/blob/master/So
 1. Create an implementation of the `OXPatternLockDelegate` protocol.
 
 2. Add `OXPatternLock` to your Storyboard/xib file or create it manually.
+
+3. For security reasons all processing you have to do manually. Receive callback from delegate with `patternLock` instance and `track` array. For example: if grid size equals 3 there are 9 track poins. So result track array will be array of integers from 0 to 8 like indexes in dots array. 
 
 ```swift
 func didPatternInput(patterLock: OXPatternLock, track: [Int]) {
