@@ -4,6 +4,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/OXPatternLock.svg)]()
 [![CocoaPods](https://img.shields.io/cocoapods/l/OXPatternLock.svg)]()
 [![CocoaPods](https://img.shields.io/cocoapods/p/OXPatternLock.svg)]()
+[![Language](https://img.shields.io/badge/swift-3.0-orange.svg)]()
 
 An iOS pattern lock like Android authentication written in Swift.
 
@@ -52,7 +53,7 @@ Add [OXPatternLock.swift](https://github.com/oxozle/OXPatternLock/blob/master/So
 
 2. Add `OXPatternLock` to your Storyboard/xib file or create it manually.
 
-3. For security reasons all processing you have to do manually. Receive callback from delegate with `patternLock` instance and `track` array. For example: if grid size equals 3 there are 9 track poins. So result track array will be array of integers from 0 to 8 like indexes in dots array. 
+3. For security reasons all processing you have to do manually. Receive callback from delegate with `patternLock` instance and `track` array. For example: if grid size equals 3 there are 9 track poins. So result track array will be array of integers from 0 to 8 like indexes in dots array.
 
 ```swift
 func didPatternInput(patterLock: OXPatternLock, track: [Int]) {
